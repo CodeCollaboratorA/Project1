@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moody Food</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar-container">
+		<div class="container-fluid" id="entire-nav">
+       	 	<div class="navbar-header">
+          		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            		<span class="sr-only">Toggle navigation</span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+          		</button>
+          		<a class="navbar-brand" href="index.html"><img class="logo" src="images/header/moody_food_logo_small.png"></a>
+        	</div>
+        	<div id="navbar" class="collapse navbar-collapse">
+          		<ul class="nav navbar-nav">
+            		<li><a href="about.html">About</a></li>
+            		<li class="active"><a href="upload.html">Upload</a></li>
+            		<li><a href="sources.html">Sources</a></li>
+          		</ul>
+        	</div><!--/.nav-collapse -->
+   		</div>
+	</nav>
+	<h1>Upload your own recipe!</h1>
+	<main class="container-fluid">
+			<div class="col-md-6 col-md-offset-3">
+					<form class="recipe-form" action="upload.html" method="get">
+						<div class="form-group">
+			  				<label for="exampleInputText">Your Name</label>
+			  				<input type="text" name="name" class="form-control" placeholder="Your Name">
+			  			</div>
+			  			<div class="form-group">
+			    			<label for="exampleInputEmail1">Email Address</label>
+			    			<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			  			</div>
+			  			<div class="form-group">
+			  				<label for="exampleInputText">Recipe Name</label>
+			  				<input type="text" name="recipename"class="form-control" placeholder="Recipe Name">
+			  			</div>	
+			  			<div class="form-group">
+			   				<label for="exampleInputFile">Recipe Photo</label>
+			    			<input type="file" name="recipephoto"id="exampleInputFile">
+			   				<p class="help-block">Please upload jpg or png format. File size no larger than 5MB.</p>
+			  			</div>
+			  			<div class="form-group">
+			  				<label for="exampleTextArea">Please paste your recipe in the box below.</label>
+			  				<textarea class="form-control" name="recipe"rows="10"></textarea>
+			  			</div>
+			  			<button type="submit" class="btn btn-default"id="submit-button">Submit</button>
+			  			<div class="alert alert-success">
+    						<strong class='submit-message'>Success! Your recipe has been submitted!</strong> 
+  						</div>
+					</form>
+			</div>		
+	</main>
+	<footer class="container-fluid">
+		<div>
+			<p>&copy; 2015 Moody Food. All Rights Reserved.</p>
+		</div>
+		<div class="social">
+			<a href="https://www.facebook.com/" target="_blank"><img class= "sociallogos-small" src="images/social_icons/25px/facebook_small_black.png"></a>
+			<a href="https://instagram.com/" target="_blank"><img class= "sociallogos-small" src="images/social_icons/25px/instagram_small_black.png"></a>
+			<a href="https://www.pinterest.com/" target="_blank"><img class= "sociallogos-small" src="images/social_icons/25px/pinterest_small_black.png"></a>
+			<button class="send-link"><a href="mailto:daisymaldonado0@gmail.com"><img class= "sociallogos-small" src="images/social_icons/25px/email_small_black.png"></a></button>
+		</div>
+	</footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="js/recipe-form.js"></script>
+</body>
+</html>
